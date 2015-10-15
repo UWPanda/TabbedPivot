@@ -347,25 +347,25 @@
                 <PivotItem.Header>
                     <local:PivotHeader Text="Two" Icon="&#xE11F;" />
                 </PivotItem.Header>
-                <Grid Background="#FF84B5D1" />
+                <Grid Background="#FFC384D1" />
             </PivotItem>
             <PivotItem>
                 <PivotItem.Header>
                     <local:PivotHeader Text="Three" Icon="&#xEA80;" />
                 </PivotItem.Header>
-                <Grid Background="#FF84B5D1" />
+                <Grid Background="#FFC9D647" />
             </PivotItem>
             <PivotItem>
                 <PivotItem.Header>
                     <local:PivotHeader Text="Four" Icon="&#xE19F;" />
                 </PivotItem.Header>
-                <Grid Background="#FF84B5D1" />
+                <Grid Background="#FF84D1A0" />
             </PivotItem>
             <PivotItem>
                 <PivotItem.Header>
                     <local:PivotHeader Text="Five" Icon="&#xE1E2;" />
                 </PivotItem.Header>
-                <Grid Background="#FF84B5D1" />
+                <Grid Background="#FFD67E41" />
             </PivotItem>
         </Pivot>
     </Grid>
