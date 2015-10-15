@@ -233,8 +233,8 @@
                                     <PivotPanel x:Name="Panel" VerticalAlignment="Stretch">
                                         <Grid x:Name="PivotLayoutElement" >
                                             <Grid.RowDefinitions>
-                                                <RowDefinition Height="Auto" />
                                                 <RowDefinition Height="*" />
+                                                <RowDefinition Height="Auto" />
                                             </Grid.RowDefinitions>
                                             
                                             <!-- By setting the column definitions to *,Auto,* allows the tabs to be centered by default -->
@@ -255,12 +255,14 @@
                                                 BorderThickness="0,0,0,1" />
 
                                             <ContentPresenter
+                                                Grid.Row="1"
                                                 x:Name="LeftHeaderPresenter"
                                                 HorizontalAlignment="Stretch"
                                                 VerticalAlignment="Stretch"
                                                 Content="{TemplateBinding LeftHeader}"
                                                 ContentTemplate="{TemplateBinding LeftHeaderTemplate}" />
                                             <ContentControl
+                                                Grid.Row="1"
                                                 x:Name="HeaderClipper"
                                                 Grid.Column="1"
                                                 HorizontalContentAlignment="Stretch"
@@ -281,6 +283,7 @@
                                                 </Grid>
                                             </ContentControl>
                                             <Button
+                                                Grid.Row="1"
                                                 x:Name="PreviousButton"
                                                 Grid.Column="1"
                                                 Width="20"
@@ -295,6 +298,7 @@
                                                 Template="{StaticResource PreviousTemplate}"
                                                 UseSystemFocusVisuals="False" />
                                             <Button
+                                                Grid.Row="1"
                                                 x:Name="NextButton"
                                                 Grid.Column="1"
                                                 Width="20"
@@ -309,13 +313,14 @@
                                                 Template="{StaticResource NextTemplate}"
                                                 UseSystemFocusVisuals="False" />
                                             <ContentPresenter
+                                                Grid.Row="1"
                                                 x:Name="RightHeaderPresenter"
                                                 Grid.Column="2"
                                                 HorizontalAlignment="Stretch"
                                                 VerticalAlignment="Stretch"
                                                 Content="{TemplateBinding RightHeader}"
                                                 ContentTemplate="{TemplateBinding RightHeaderTemplate}" />
-                                            <ItemsPresenter x:Name="PivotItemPresenter" Grid.Row="1" Grid.ColumnSpan="3">
+                                            <ItemsPresenter x:Name="PivotItemPresenter" Grid.ColumnSpan="3">
                                                 <ItemsPresenter.RenderTransform>
                                                     <TransformGroup>
                                                         <TranslateTransform x:Name="ItemsPresenterTranslateTransform" />
